@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>FBC9215A-37C9-43BF-AF56-C6C2BA8F3D05</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FBC9215A-37C9-43BF-AF56-C6C2BA8F3D05.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>appOne project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>appOne</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project appOne with scheme appOne and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>578343108.03242004</real>
+			<key>timeStoppedRecording</key>
+			<real>578343111.47130597</real>
+			<key>title</key>
+			<string>Building project appOne with scheme appOne and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>FBC9215A-37C9-43BF-AF56-C6C2BA8F3D05</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

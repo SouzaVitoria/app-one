@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.cpp \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/FBString.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CppAttributes.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Traits.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/Hash.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Utility.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/ApplyTuple.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/Invoke.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Preprocessor.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV1.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV2.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Bits.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/ConstexprMath.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Assume.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Builtins.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Exception.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/Malloc.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/detail/MallocImpl.h \
+  /Users/vitoriasouza/Documents/ProjetosRN/appOne/node_modules/react-native/third-party/folly-2018.10.22.00/folly/detail/Demangle.h
