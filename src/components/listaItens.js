@@ -4,7 +4,7 @@ import Itens from './Itens';
 import axios from 'axios'; //Para fazer a requisição HTTP
 
 const styles = StyleSheet.create({
-  
+
   viewLista: {
     marginHorizontal: 4,
     marginVertical: 2,
@@ -40,6 +40,17 @@ export default class ListaItens extends Component {
     }
   }
 
+  editarDescricao = editDescription => {
+    const listarItens = [...this.state.listarItens]
+    const index = listarItens.findIndex(value => {
+       return value._id === editDescription._id
+    })
+    if (index > -1) {
+      listarItens[index] = { ...editDescription }
+      this.setState({ listarItens })
+
+    }
+  }
 
   componentWillMount() { //Fazer aquisição HTTP
     axios.get('http://localhost:3000/products')
@@ -54,38 +65,38 @@ export default class ListaItens extends Component {
   render() {
     return (
       <SafeAreaView style={{ flex: 1, backgroundColor: '#e8f5ff' }}>
-        <FlatList 
+        <FlatList
           data={this.state.listarItens}
           keyExtractor={item => item._id}
           renderItem={({ item }) => {
             return (
               <View style={styles.viewLista} >
                 <Itens key={item._id} item={item} />
-                <View style={{padding: 5}}>
+                <View style={{ padding: 5 }}>
                   <TouchableOpacity onPress={
-                   () => {
-                     this.props.onEdit(item.description, item._id);
-                   }
-                }>
-                  <Image source={require('../imgs/edit.png')} style={{ width: 24, height: 24 }} />
-                </TouchableOpacity>
+                    () => {
+                      this.props.onEdit(item.description, item._id);
+                    }
+                  }>
+                    <Image source={require('../imgs/edit.png')} style={{ width: 24, height: 24 }} />
+                  </TouchableOpacity>
                 </View>
-                
-                <View style={{padding: 5}}>
+
+                <View style={{ padding: 5 }}>
                   <TouchableOpacity onPress={
-                  () => {
-                    axios.delete(`http://localhost:3000/products/admin/${item._id}`)
-                      .then(() => {
-                        alert("Removido")
-                        this.eDeleteItem(item);
-                      })
-                      .catch((e) => {
-                        console.log(e)
-                      })
-                  }
-                }>
-                  <Image source={require('../imgs/delete.png')} style={{ width: 25, height: 25 }} />
-                </TouchableOpacity>
+                    () => {
+                      axios.delete(`http://localhost:3000/products/admin/${item._id}`)
+                        .then(() => {
+                        //  alert("Removido")
+                          this.eDeleteItem(item);
+                        })
+                        .catch((e) => {
+                          console.log(e)
+                        })
+                    }
+                  }>
+                    <Image source={require('../imgs/delete.png')} style={{ width: 25, height: 25 }} />
+                  </TouchableOpacity>
                 </View>
               </View>
             )

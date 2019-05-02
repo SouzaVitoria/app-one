@@ -43,6 +43,7 @@ export default class App extends Component { //Default = app
                   <View style={{ flex: 0.15 }}>
                     <HomeLista 
                        nav={navigator} 
+                       editDescriptions = {editDescription => {this.listaItens.editarDescricao(editDescription)}}
                        onSave={newItem => {this.listaItens.addNewItem(newItem)}}
                        ref={ref => {this.homeLista = ref}}
                     />

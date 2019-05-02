@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { SafeAreaView, StyleSheet, TextInput, TouchableOpacity, Text, View, Image } from 'react-native';
+import { SafeAreaView, StyleSheet, TextInput, TouchableOpacity, View, Image } from 'react-native';
 import axios from 'axios'; //Para fazer a requisição HTTP
 
 const styles = StyleSheet.create({
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 	view2: {
 		margin: 5,
 		justifyContent: 'center',
-		
+
 	},
 	input: {
 		fontSize: 20,
@@ -38,7 +38,7 @@ export default class HomeLista extends Component {
 
 	editItem = (editarItem, idItem) => {
 		this.atualizaValor(editarItem);
-		this.itemId = idItem
+		this.itemId = idItem;
 	}
 
 	componentWillMount() { //Fazer aquisição HTTP
@@ -55,7 +55,6 @@ export default class HomeLista extends Component {
 		const { input, view, view2 } = styles;
 		let valorNoInput = this.state.valorInput;
 
-		//alert(this.props.listarItens);
 		return (
 			<View style={view2}>
 				<SafeAreaView style={view}>
@@ -73,21 +72,20 @@ export default class HomeLista extends Component {
 									alert('Insira alguma coisa')
 								} else {
 									if (this.itemId) {
-										//alert(getId._id);
 										axios.put(`http://localhost:3000/products/${this.itemId}`, { description: valorNoInput })
 											.then(res => {
-												this.setState({ listarItens: res.data, valorNoInput: '' })
-												this.itemId = null
+												this.setState({ listarItens: res.data, valorNoInput: '' });
+												this.itemId = null;
+												this.props.editDescriptions(res.data.product);
 											})
 											.catch((e) => {
 												console.log(e)
-												console.log('n salvou')
 											})
 									} else {
 										axios.post('http://localhost:3000/products', { description: valorNoInput })
 											.then(response => {
 												this.props.onSave(response.data.data);
-												alert('Salvo')
+											//	alert('Salvo')
 											})
 											.catch(e => {
 												console.log(e);
